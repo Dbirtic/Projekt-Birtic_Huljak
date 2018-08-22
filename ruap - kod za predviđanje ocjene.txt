@@ -43,7 +43,7 @@ namespace CallRequestResponseService
                             new StringTable() 
                             {
                                 ColumnNames = new string[] {"Company (Maker-if known)", "Specific Bean Origin or Bar Name", "REF", "Review Date", "Cocoa Percent", "Company Location", "Rating", "Bean Type", "Broad Bean Origin"},
-                                Values = new string[,] {  { "value", "value", "0", "0", "value", "value", "0", "value", "value" },  { "value", "value", "0", "0", "value", "value", "0", "value", "value" },  }
+                                Values = new string[,] {  { "value", "value", "0", "0", "0", "value", "0", "value", "value" },  { "value", "value", "0", "0", "0", "value", "0", "value", "value" },  }
                             }
                         },
                     },
@@ -53,7 +53,7 @@ namespace CallRequestResponseService
                 const string apiKey = "abc123"; // Replace this with the API key for the web service
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue( "Bearer", apiKey);
 
-                client.BaseAddress = new Uri("https://ussouthcentral.services.azureml.net/workspaces/96624a90e0be4887b237b7ed57562064/services/4e4a7dcc620f4b14849d56fed755ee2d/execute?api-version=2.0&details=true");
+                client.BaseAddress = new Uri("https://ussouthcentral.services.azureml.net/workspaces/96624a90e0be4887b237b7ed57562064/services/1a8ab16c37f14c8ebda0c2f57cabcf19/execute?api-version=2.0&details=true");
                 
                 // WARNING: The 'await' statement below can result in a deadlock if you are calling this code from the UI thread of an ASP.Net application.
                 // One way to address this would be to call ConfigureAwait(false) so that the execution does not attempt to resume on the original context.
