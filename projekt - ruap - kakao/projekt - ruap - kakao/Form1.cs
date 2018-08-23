@@ -16,6 +16,7 @@ namespace projekt___ruap___kakao
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +30,14 @@ namespace projekt___ruap___kakao
         private void lbl_rev_date_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_predict_Click(object sender, EventArgs e)
+        {
+            string reviewDate = txt_rev_date.Text;
+            string companyLocation = txt_comp_loc.Text;
+            string rating = txt_rating.Text;
+            string cocoaPercent = txt_coc_perc.Text;
         }
     }
 }

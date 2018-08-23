@@ -121,6 +121,7 @@
             this.btn_predict.TabIndex = 8;
             this.btn_predict.Text = "Predict!";
             this.btn_predict.UseVisualStyleBackColor = true;
+            this.btn_predict.Click += new System.EventHandler(this.btn_predict_Click);
             // 
             // lbl_pred_coc
             // 
