@@ -6,6 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Net.Http;
+using System.Net.Http.Formatting;
+using System.Net.Http.Headers;
 using System.Windows.Forms;
 
 namespace projekt___ruap___kakao
@@ -15,6 +19,16 @@ namespace projekt___ruap___kakao
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_rev_date_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
