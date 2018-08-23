@@ -7,3 +7,4 @@ https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/
 https://docs.microsoft.com/en-us/azure/machine-learning/studio/evaluate-model-performance
 
 https://developer.telerik.com/topics/machine-learning/consuming-azure-machine-learning-asp-net-core/
+

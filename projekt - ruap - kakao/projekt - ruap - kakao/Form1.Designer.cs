@@ -42,6 +42,7 @@
             this.lbl_perc = new System.Windows.Forms.Label();
             this.lbl_score_perc = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.btn_exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_rev_date
@@ -115,7 +116,7 @@
             // 
             // btn_predict
             // 
-            this.btn_predict.Location = new System.Drawing.Point(625, 38);
+            this.btn_predict.Location = new System.Drawing.Point(743, 510);
             this.btn_predict.Name = "btn_predict";
             this.btn_predict.Size = new System.Drawing.Size(75, 23);
             this.btn_predict.TabIndex = 8;
@@ -127,7 +128,7 @@
             // 
             this.lbl_pred_coc.AutoSize = true;
             this.lbl_pred_coc.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_pred_coc.Location = new System.Drawing.Point(552, 80);
+            this.lbl_pred_coc.Location = new System.Drawing.Point(740, 80);
             this.lbl_pred_coc.Name = "lbl_pred_coc";
             this.lbl_pred_coc.Size = new System.Drawing.Size(81, 13);
             this.lbl_pred_coc.TabIndex = 9;
@@ -137,7 +138,7 @@
             // 
             this.lbl_score.AutoSize = true;
             this.lbl_score.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_score.Location = new System.Drawing.Point(552, 110);
+            this.lbl_score.Location = new System.Drawing.Point(740, 110);
             this.lbl_score.Name = "lbl_score";
             this.lbl_score.Size = new System.Drawing.Size(73, 13);
             this.lbl_score.TabIndex = 10;
@@ -147,17 +148,18 @@
             // 
             this.lbl_perc.AutoSize = true;
             this.lbl_perc.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_perc.Location = new System.Drawing.Point(639, 80);
+            this.lbl_perc.Location = new System.Drawing.Point(827, 80);
             this.lbl_perc.Name = "lbl_perc";
             this.lbl_perc.Size = new System.Drawing.Size(21, 13);
             this.lbl_perc.TabIndex = 11;
             this.lbl_perc.Text = "0%";
+            this.lbl_perc.Click += new System.EventHandler(this.lbl_perc_Click);
             // 
             // lbl_score_perc
             // 
             this.lbl_score_perc.AutoSize = true;
             this.lbl_score_perc.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_score_perc.Location = new System.Drawing.Point(632, 110);
+            this.lbl_score_perc.Location = new System.Drawing.Point(819, 110);
             this.lbl_score_perc.Name = "lbl_score_perc";
             this.lbl_score_perc.Size = new System.Drawing.Size(21, 13);
             this.lbl_score_perc.TabIndex = 12;
@@ -165,19 +167,30 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(34, 110);
+            this.webBrowser1.Location = new System.Drawing.Point(34, 68);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(478, 328);
+            this.webBrowser1.Size = new System.Drawing.Size(670, 474);
             this.webBrowser1.TabIndex = 13;
             this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.Location = new System.Drawing.Point(864, 510);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(75, 23);
+            this.btn_exit.TabIndex = 14;
+            this.btn_exit.Text = "Exit";
+            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OliveDrab;
-            this.ClientSize = new System.Drawing.Size(749, 450);
+            this.ClientSize = new System.Drawing.Size(964, 545);
+            this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.lbl_score_perc);
             this.Controls.Add(this.lbl_perc);
@@ -216,6 +229,7 @@
         private System.Windows.Forms.Label lbl_perc;
         private System.Windows.Forms.Label lbl_score_perc;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.Button btn_exit;
     }
 }
 

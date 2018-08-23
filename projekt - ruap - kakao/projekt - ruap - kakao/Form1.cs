@@ -48,12 +48,12 @@ namespace projekt___ruap___kakao
             string cocoaPercent = txt_coc_perc.Text;
 
             StringBuilder cocoaAddres = new StringBuilder();
-            //cocoaAddres.Append("https://www.google.hr");
-            if(companyLocation != string.Empty)
+            cocoaAddres.Append("http://maps.google.com/maps?q=");
+            if (companyLocation != string.Empty)
             {
-                cocoaAddres.Append(companyLocation);
+                cocoaAddres.Append(companyLocation + ",");
             }
-            webBrowser1.Navigate(companyLocation);
+            webBrowser1.Navigate(cocoaAddres.ToString());
             lbl_perc.Text = cocoaPercent.ToString();
             lbl_score_perc.Text = await InvokeRequestResponseService(reviewDate, companyLocation, rating, cocoaPercent);
             
@@ -116,6 +116,16 @@ namespace projekt___ruap___kakao
                     return "greška";
                 }
             }
+        }
+
+        private void lbl_perc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
